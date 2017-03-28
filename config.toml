@@ -1,0 +1,37 @@
+baseurl = "https://cooldev.github.io/blog/"
+relativeurls = true
+languageCode = "en-us"
+title = "A Hugo website"
+theme = "hugo-lithium-theme"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rproj","_files$", "_cache$"]
+publishDir = "docs"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "Hello"
+    url = "https://github.com/cooldev/blog_down5"
+[[menu.main]]
+    name = "More"
+    url = "https://twitter.com"
+
+[params]
+    description = "A website built through Hugo and blogdown."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.9.0"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
